@@ -655,3 +655,70 @@ body {
         transform: rotate(360deg);
     }
 }
+
+/*==========Finished projects======*/
+.project-item {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    max-width: 530px;
+    margin: auto auto 16px;
+}
+
+.project-item .text {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(38, 41, 39, 0.2);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+.project-item .text .des {
+    color: #fff;
+    margin: auto 32px 32px;
+}
+
+.project-item .text .des h2 {
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.project-item .text .des p {
+    font-weight: light;
+    font-size: 20px;
+}
+
+@media(min-width:992px) {
+    .project-item {
+        max-width: none;
+        margin: 0;
+    }
+
+    .project-item .text {
+        transition: clip-path 0.25s ease-out, background-color 0.7s;
+        clip-path: inset(0px);
+    }
+
+    .project-item .text .des {
+        transition: opacity 0.25s;
+        margin-left: 80px;
+        margin-right: 80px;
+        margin-bottom: 80px;
+    }
+
+    .project-item img {
+        transition: clip-path 0.25s ease-out;
+        clip-path: inset(-1px);
+    }
+
+    .project-item:hover img {
+        clip-path: inset(32px);
+    }
+
+    .project-item:hover .text {
+        background-color: rgba(25, 61, 1, 0.6);
+    }
+}
