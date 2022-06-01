@@ -662,6 +662,7 @@ body {
     position: relative;
     overflow: hidden;
     max-width: 530px;
+    height: 370px;
     margin: auto auto 16px;
 }
 
@@ -670,6 +671,7 @@ body {
     height: 100%;
     width: 100%;
     background-color: rgba(38, 41, 39, 0.2);
+    background-color: rgba(227, 195, 124, 0.3);
     position: absolute;
     top: 0;
     bottom: 0;
@@ -682,13 +684,19 @@ body {
 }
 
 .project-item .text .des h2 {
-    font-size: 14px;
+    font-size: 20px;
     text-transform: uppercase;
+    color: #FDBE33;
 }
 
 .project-item .text .des p {
-    font-weight: light;
-    font-size: 20px;
+    font-size: 14px;
+    color: rgb(20, 36, 20);
+}
+
+.img-fluid {
+    height: 100%;
+    filter: grayscale(100%);
 }
 
 @media(min-width:992px) {
@@ -716,9 +724,10 @@ body {
 
     .project-item:hover img {
         clip-path: inset(32px);
+        filter: grayscale(0);
     }
 
     .project-item:hover .text {
-        background-color: rgba(25, 61, 1, 0.6);
+        background-color: rgba(253, 190, 51, .3);
     }
 }
