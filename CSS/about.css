@@ -1,0 +1,14 @@
+section.about-main {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: green;
+}
+
+section.about-main .container {
+    height: 100%;
+    width: 90%;
+    background: red;
+}
