@@ -968,7 +968,7 @@ section.faces .container {
 }
 
 .card {
-    min-height: 450px;
+    min-height: 500px;
     width: 300px;
     box-shadow: 0 10px 20px #e8c985;
     padding: 10px;
