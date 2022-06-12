@@ -36,6 +36,7 @@
 
     <!----- CSS Linkage ------>
     <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="stylesheet" href="CSS/about.css" />
   </head>
 
   <body>
@@ -102,9 +103,7 @@
           <div class="navbar-nav ml-auto">
             <a href="index.html" class="nav-item nav-link">Home</a>
             <a href="about.html" class="nav-item nav-link">About</a>
-            <a href="campus.html" class="nav-item nav-link active"
-              >Organisation</a
-            >
+            <a href="campus.html" class="nav-item nav-link active">Gallery</a>
             <a href="contact.html" class="nav-item nav-link">Contact</a>
           </div>
         </div>
@@ -112,6 +111,133 @@
     </div>
     <!-- Nav Bar End -->
     <!------ Navigation End ------>
+
+    <!------ Gallery Start ------>
+    <div class="w3-container" style="padding: 128px 16px" id="work">
+      <h3 class="w3-center">OUR WORK</h3>
+      <p class="w3-center w3-large">What we've done for people</p>
+
+      <div class="w3-row-padding" style="margin-top: 64px">
+        <div class="w3-col l3 m6 my-2">
+          <img
+            src="IMAGE/smdc.jpg"
+            style="width: 100%"
+            onclick="onClick(this)"
+            class="w3-hover-opacity"
+            alt="A microphone"
+          />
+        </div>
+
+        <div class="w3-col l3 m6 my-2">
+          <img
+            src="IMAGE/smdc.jpg"
+            style="width: 100%"
+            onclick="onClick(this)"
+            class="w3-hover-opacity"
+            alt="A microphone"
+          />
+        </div>
+
+        <div class="w3-col l3 m6 my-2">
+          <img
+            src="IMAGE/smdc.jpg"
+            style="width: 100%"
+            onclick="onClick(this)"
+            class="w3-hover-opacity"
+            alt="A microphone"
+          />
+        </div>
+
+        <div class="w3-col l3 m6 my-2">
+          <img
+            src="IMAGE/smdc.jpg"
+            style="width: 100%"
+            onclick="onClick(this)"
+            class="w3-hover-opacity"
+            alt="A microphone"
+          />
+        </div>
+
+        <div class="w3-col l3 m6 my-2">
+          <img
+            src="IMAGE/smdc.jpg"
+            style="width: 100%"
+            onclick="onClick(this)"
+            class="w3-hover-opacity"
+            alt="A microphone"
+          />
+        </div>
+
+        <div class="w3-col l3 m6 my-2">
+          <img
+            src="IMAGE/smdc.jpg"
+            style="width: 100%"
+            onclick="onClick(this)"
+            class="w3-hover-opacity"
+            alt="A microphone"
+          />
+        </div>
+
+        <div class="w3-col l3 m6 my-2">
+          <img
+            src="IMAGE/smdc.jpg"
+            style="width: 100%"
+            onclick="onClick(this)"
+            class="w3-hover-opacity"
+            alt="A microphone"
+          />
+        </div>
+
+        <div class="w3-col l3 m6 my-2">
+          <img
+            src="IMAGE/smdc.jpg"
+            style="width: 100%"
+            onclick="onClick(this)"
+            class="w3-hover-opacity"
+            alt="A microphone"
+          />
+        </div>
+
+        <div class="w3-col l3 m6 my-2">
+          <img
+            src="IMAGE/smdc.jpg"
+            style="width: 100%"
+            onclick="onClick(this)"
+            class="w3-hover-opacity"
+            alt="A microphone"
+          />
+        </div>
+
+        <div class="w3-col l3 m6 my-2">
+          <img
+            src="IMAGE/smdc.jpg"
+            style="width: 100%"
+            onclick="onClick(this)"
+            class="w3-hover-opacity"
+            alt="A microphone"
+          />
+        </div>
+        <div class="w3-col l3 m6 my-2">
+          <img
+            src="IMAGE/smdc.jpg"
+            style="width: 100%"
+            onclick="onClick(this)"
+            class="w3-hover-opacity"
+            alt="A microphone"
+          />
+        </div>
+        <div class="w3-col l3 m6 my-2">
+          <img
+            src="IMAGE/smdc.jpg"
+            style="width: 100%"
+            onclick="onClick(this)"
+            class="w3-hover-opacity"
+            alt="A microphone"
+          />
+        </div>
+      </div>
+    </div>
+    <!------ Gallery End ------>
 
     <!--------- Fotter Start --------->
     <footer>
@@ -125,7 +251,7 @@
               <a href="about.html" class="nav-item nav-link">About</a>
             </li>
             <li>
-              <a href="campus.html" class="nav-item nav-link">Organisation</a>
+              <a href="campus.html" class="nav-item nav-link">Gallery</a>
             </li>
             <li>
               <a href="contact.html" class="nav-item nav-link">Contact</a>
@@ -168,8 +294,16 @@
     <!------ Bootstrap Js CDN Linkage ------>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
-    <!------ Bootstrap Js CDN Linkage ------>
+    <!------ Js CDN Linkage ------>
     <script src="JS/app.js"></script>
     <script src="JS/script.js"></script>
+    <script>
+      function onClick(element) {
+        document.getElementById("img01").src = element.src;
+        document.getElementById("modal01").style.display = "block";
+        var captionText = document.getElementById("caption");
+        captionText.innerHTML = element.alt;
+      }
+    </script>
   </body>
 </html>
