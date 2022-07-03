@@ -1,6 +1,7 @@
 section.gallery {
     width: 100%;
-    margin-top: 150px;
+    padding-top: 150px;
+    background: #e9eaee;
 }
 
 section.gallery .container {
